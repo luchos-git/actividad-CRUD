@@ -2,7 +2,7 @@
 // interactuando con el usuario y el modelo de datos desarrollado en modulos.js
 
 document.addEventListener("DOMContentLoaded", () => {
-        //cargamos listado de personas
+        //cargamos listado de personas 
 
     mostrarPersonas();
 
