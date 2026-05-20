@@ -16,22 +16,22 @@ const mostrarPersonas=()=>{
     const contadorPersonas=document.querySelector('#listadoPersonas')
 
     personas=JSON.parse(localStorage.getItem(`personas`)) //JSon a objeto
-    
-    if (personas){
-    personas.forEach(p => {
-        contadorPersonas.innerHTML += `<div class="persona">
-        <div class="info">
-            <p>Nombre: ${p.nombre}</p> 
-            <p>Edad: ${p.edad}</p>
-            <p>Dni: ${p.DNI}</p>
-        </div>
-        <div class="botones">
-            <button class="btn-modificar">Modificar</button>
-            <button class="btn-eliminar">Eliminar</button>
-        </div>
-        </div>`
-    });
-}
+
+        if (personas){
+        personas.forEach(p => {
+            contadorPersonas.innerHTML += `<div class="persona">
+            <div class="info">
+                <p>Nombre: ${p.nombre}</p> 
+                <p>Edad: ${p.edad}</p>
+                <p>Dni: ${p.DNI}</p>
+            </div>
+            <div class="botones">
+                <button class="btn-modificar">Modificar</button>
+                <button class="btn-eliminar">Eliminar</button>
+            </div>
+            </div>`
+        });
+    }
 }
 
 //funcion para buscar Personas por nombre o dni
